@@ -1,5 +1,5 @@
 /* =========================================================
-   UNICIVE · BLACK FRIDAY — live 09/11 às 19h45 no YouTube
+   UNICIVE · ÚLTIMA CHANCE — venda de 03/11 às 10h até 10/11 às 23h59
 
    Duas metades:
    1. A CENA — abertura (vidro, raios, explosão), fogo e raios ambientes,
@@ -15,20 +15,19 @@
      CONFIG — os únicos valores específicos desta página
      ========================================================= */
   var CONFIG = {
-    /* A OFERTA: de 09/11 até 20/11, 23h59. A página só vai ao ar quando as
+    /* A OFERTA: de 03/11, 10h, até 10/11, 23h59. A página só vai ao ar quando as
        vendas começam, então o cronômetro conta sempre até o `fim`. O
        `inicio` fica só como referência (agenda/registro). */
-    inicio: "2026-11-09T00:00:00-03:00",
-    fim:    "2026-11-20T23:59:59-03:00",
+    inicio: "2026-11-03T10:00:00-03:00",
+    fim:    "2026-11-10T23:59:59-03:00",
 
     /* Link do checkout de matrícula da Unicive. Todos os botões
        "Garantir minha matrícula" usam este valor (com as UTMs da visita). */
-    checkout: "https://unicv.checkout.cppem.com.br/pay/matricula-unicive-ead-mega-desconto-de-black-friday",
+    checkout: "https://unicv.checkout.cppem.com.br/pay/matricula-unicive-ead-mega-desconto-de-ultima-chance",
 
-    /* Mensalidade de Black Friday: vazia por enquanto (tabela oficial em
-       definição), o cartão mostra "R$ ??,??" em segredo. Preenchida, ex.
-       "R$ 129,90", o valor aparece no lugar e o aviso some. */
-    mensalidade: "",
+    /* Mensalidade da Última Chance: de R$ 250 por R$ 149,90 (o "de" fica
+       no HTML). */
+    mensalidade: "R$ 149,90",
 
     /* Restos da página de cadastro, mantidos para o script compartilhado
        funcionar; esta página não tem formulário nem pavio. */
