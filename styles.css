@@ -750,6 +750,22 @@ html.is-pulado .anim { animation: sobe .75s var(--freada) both; }
 .dock__info span { font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 .dock .btn { min-height: 46px; padding: .6rem 1.2rem; font-size: .85rem; }
 
+/* ===================== WHATSAPP FLUTUANTE =====================
+   Discreto de propósito: círculo verde padrão, sem animação. Acompanha a
+   rolagem no canto inferior direito e sobe quando a dock mobile aparece. */
+.zap {
+  position: fixed; right: 1rem; bottom: calc(1rem + env(safe-area-inset-bottom)); z-index: 140;
+  display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%;
+  background: #25d366; color: #fff; box-shadow: 0 3px 10px rgba(0, 0, 0, .35);
+  transition: bottom .4s var(--ease), background-color .2s;
+}
+.zap svg { width: 30px; height: 30px; fill: currentColor; }
+.zap:hover { background: #20bd5a; }
+.zap:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+@media (max-width: 980px) {
+  body:has(.dock.is-on) .zap { bottom: calc(5.4rem + env(safe-area-inset-bottom)); }
+}
+
 /* ===================== REVEAL AO ROLAR ===================== */
 html.js [data-reveal] { opacity: 0; transform: translateY(26px); transition: opacity .7s var(--ease), transform .7s var(--freada); }
 html.js [data-reveal].is-in { opacity: 1; transform: none; }
