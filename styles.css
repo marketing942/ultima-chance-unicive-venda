@@ -755,15 +755,15 @@ html.is-pulado .anim { animation: sobe .75s var(--freada) both; }
    rolagem no canto inferior direito e sobe quando a dock mobile aparece. */
 .zap {
   position: fixed; right: 1rem; bottom: calc(1rem + env(safe-area-inset-bottom)); z-index: 140;
-  display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%;
+  display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%;
   background: #25d366; color: #fff; box-shadow: 0 3px 10px rgba(0, 0, 0, .35);
   transition: bottom .4s var(--ease), background-color .2s;
 }
-.zap svg { width: 30px; height: 30px; fill: currentColor; }
+.zap svg { width: 38px; height: 38px; fill: currentColor; }
 .zap:hover { background: #20bd5a; }
 .zap:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
 @media (max-width: 980px) {
-  body:has(.dock.is-on) .zap { bottom: calc(5.4rem + env(safe-area-inset-bottom)); }
+  body:has(.dock.is-on) .zap { bottom: calc(5.6rem + env(safe-area-inset-bottom)); }
 }
 
 /* ===================== REVEAL AO ROLAR ===================== */
